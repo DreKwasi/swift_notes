@@ -1,0 +1,5 @@
+py_env/
+secrets/
+.streamlit/
+.vscode/
+db.py
