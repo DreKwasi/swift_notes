@@ -38,15 +38,17 @@ def full_setup(page_header, filename, table_name):
     # Page settings
     st.set_page_config(page_title="Swift Notes", page_icon="📚", layout="wide")
 
+
     st.header(page_header)
 
 
-    st.sidebar.header("Toggle Options")
-    select = st.sidebar.selectbox(
-        "Select A Subject",
-        options=["Free Courses", "Articles", "Research Papers"],
-        help="Click the Dropdown to choose a subject",
-    )
+    # st.header("Toggle Options")
+    with st.columns([1,6])[0]:
+        select = st.selectbox(
+            "**Choose A Topic** 👇🏻",
+            options=["Free Courses", "Articles", "Research Papers"],
+            help="Click the Dropdown to choose a subject",
+        )
     path = f"assets/{filename}/data/{filename}.csv"
     if os.path.exists(path):
         with st.spinner("Loading Posts"):
