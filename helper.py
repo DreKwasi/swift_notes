@@ -36,7 +36,7 @@ def parse_posts(df, select):
 
 def full_setup(page_header, filename, table_name):
     # Page settings
-    st.set_page_config(page_title="Swift Notes", page_icon="book", layout="wide")
+    st.set_page_config(page_title="Swift Notes", page_icon="📚", layout="wide")
 
     st.header(page_header)
 
