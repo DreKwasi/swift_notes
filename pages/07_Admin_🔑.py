@@ -16,6 +16,14 @@ def sheet_names(sheet):
     sheet = str(sheet)
     return sheet[sheet.find("'") + 1 : sheet.rfind("'")]
 
+filenames = {
+    "Python": "python",
+    "Self Development": "self_dev",
+    "SQL": "sql",
+    "Excel": "excel",
+    "Google Sheet": "google_sheet",
+    "Research": "research",
+}
 
 # User Authentication
 login_credentials = dict(st.secrets["login_cred"])
@@ -40,7 +48,9 @@ if authentication_status == True:
         sheets = main_sheet.worksheets()
         sheets = list(map(sheet_names, sheets))
 
-    with st.form("Update Reading Repository", clear_on_submit=True):
+    placeholder = st.empty()
+    
+    with placeholder.form("Update Reading Repository"):
         table_name = st.selectbox("Please Enter Table Name", options=sheets)
         info_type = st.selectbox(
             "Select Information Type", options=("Free Courses", "Articles", "Research")
@@ -64,5 +74,7 @@ if authentication_status == True:
     if submit:
         with st.spinner("Updating Database"):
             update_data(main_sheet, table_name, values_dict)
-            pull_data(main_sheet, table_name)
+            pull_data(main_sheet, table_name, filenames[table_name])
             st.success("Database updated")
+            placeholder.empty()
+            st.button("Add More Entries")
