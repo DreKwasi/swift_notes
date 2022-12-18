@@ -23,6 +23,9 @@ filenames = {
     "Excel": "excel",
     "Google Sheet": "google_sheet",
     "Research": "research",
+    "Data Analysis": "data_analysis",
+    "Web Development": "web_dev",
+    "Statistics": "stats"
 }
 
 # User Authentication
