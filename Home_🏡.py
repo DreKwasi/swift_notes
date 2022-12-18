@@ -29,7 +29,7 @@ with st.expander("How to use the app"):
         """
     - Use the Navigation Bar on Your top left to peruse any topic of interest.(Toggle the Dropdown to Reveal More)
     - Within each area you can find various subsets of resources such as articles, pdfs and even FREE online courses.
-    - Click on the Expander Per Group and Read the Summary for any of the listed topics and click the link to be directed to the Page
+    - Click on the Expander Per Group, Read the Summary for any of the listed topics and click the link to be directed to the Page
     """
     )
 
