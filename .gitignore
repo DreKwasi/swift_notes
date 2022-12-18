@@ -3,3 +3,4 @@ secrets/
 .streamlit/
 .vscode/
 db.py
+__pycache__/
