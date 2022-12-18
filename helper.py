@@ -23,7 +23,7 @@ def parse_posts(df, select):
             df = grouped_dict[key]
             for _, row in df.iterrows():
                 st.write(f"##### **:blue[{row['title']}]**")
-                expander = st.expander("View Summary")
+                expander = st.expander(f"View Summary ({format_date.strftime('%d %B,%Y')})")
                 expander.markdown(
                     f"""{row['body']} 
                                 \n [Access Full Resource]({row['link']})
@@ -31,7 +31,7 @@ def parse_posts(df, select):
                                 \n Date Uploaded: {format_date.strftime("%d-%B-%Y")}"""
                 )
     else:
-        st.info("Coming Soon! Toggle the Dropdown Menu On the Sidebar for More Subjects")
+        st.info(f"""Sorry 😢, No _**{select}**_ for Now. Browse Other Topics""")
 
 
 def full_setup(page_header, filename, table_name):
