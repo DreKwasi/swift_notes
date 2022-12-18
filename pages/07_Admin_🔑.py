@@ -4,7 +4,7 @@ import streamlit_authenticator as stauth
 
 st.set_page_config(
     page_title="Swift Notes",
-    page_icon="book",
+    page_icon="📚",
     layout="wide",
     menu_items={
         "About": "### Get Quick Access To Relevant Information",
