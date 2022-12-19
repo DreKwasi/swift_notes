@@ -1,0 +1,5 @@
+title,body,publisher,link,date_created,note_type,category
+SQL Exercises with Questions and Solutions,"Hi everyone, with this article we will do some Sql, T-Sql exercises.",Medium,https://bit.ly/3HK3vag,2022-12-18,Articles,SQL
+Advanced SQL techniques for beginners,"On a scale from 1 to 10 how good are your data warehousing skills? Want to go above 7/10? This article is for you.
+
+Want to get ready for a data analyst job interview asap? This blog post explains some intricate data warehouse SQL techniques in detail. I will use BigQuery standard SQL dialect to scribble down a few thoughts on this topic.",Medium,https://bit.ly/3PCa4gX,2022-12-18,Articles,SQL
