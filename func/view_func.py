@@ -43,7 +43,7 @@ def full_setup(page_header, filename, table_name):
 
 
     # st.header("Toggle Options")
-    with st.columns([1,6])[0]:
+    with st.columns([1,4])[0]:
         select = st.selectbox(
             "**Choose A Resource** 👇🏻",
             options=["Free Courses", "Articles", "Research Papers"],
