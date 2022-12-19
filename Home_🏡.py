@@ -34,7 +34,7 @@ col3.metric("Research Publications", value=df[df["note_type"] == "Research"].sha
 st.sidebar.header("Welcome Guest")
 
 top_number = st.sidebar.slider(
-    "Select Number of Top Resources View", min_value=3, max_value=15
+    "Select Number of Top Resources To View", min_value=3, max_value=15
 )
 
 resources = ["All", "Articles", "Free Courses", "Research"]
