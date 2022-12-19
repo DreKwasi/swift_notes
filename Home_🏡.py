@@ -26,7 +26,7 @@ st.subheader("Summary Stats for Overall Uploads")
 # Columns for spliting headers or metrics
 col1, col2, col3 = st.columns(3)
 
-# Column 1 Metric for 
+# Column 1 Metric for
 col1.metric("Articles", value=df[df["note_type"] == "Articles"].shape[0])
 col2.metric("Free Courses", value=df[df["note_type"] == "Free Courses"].shape[0])
 col3.metric("Research Publications", value=df[df["note_type"] == "Research"].shape[0])
@@ -64,9 +64,23 @@ sorted_df = (
 
 st.markdown("###")
 
-st.subheader(
-    f"Top {top_number} Recently Uploaded {sel_resource if sel_resource != 'All' else 'Resources'}"
-)
+df_shape = sorted_df.shape[0]
+
+if (df_shape != top_number) or (df_shape == 0):
+    resource_str = "Resources" if sel_resource == "All" else sel_resource
+    header_str = (
+        "No Uploads Made for This Resource"
+        if df_shape == 0
+        else f"Top {df_shape} Recently Uploaded {resource_str}"
+    )
+    st.subheader(header_str)
+    if df_shape != 0 and top_number > df_shape:
+        st.info(f"Number of Uploads Do Not Exceed {df_shape}")
+
+elif df_shape == top_number:
+    resource_str = "Resources" if sel_resource == "All" else sel_resource
+    st.subheader(f"Top {top_number} Recently Uploaded {resource_str}")
+
 
 for index, row in sorted_df.iterrows():
     st.markdown(
@@ -85,12 +99,15 @@ gdf.rename(
     columns={"date_created": "Upload Date", "count_note_type": "Number of Uploads"},
     inplace=True,
 )
-fig = px.bar(gdf, x="Upload Date", y="Number of Uploads", color='category')
+fig = px.bar(gdf, x="Upload Date", y="Number of Uploads", color="category")
 
 with fig.batch_update():
     fig.update_layout(coloraxis_showscale=False)
-    fig.update_layout(width=1000, height=700,
-                    title="Number of Resources Uploaded Against Date of Upload")
+    fig.update_layout(
+        width=1000,
+        height=700,
+        title="Number of Resources Uploaded Against Date of Upload",
+    )
 
 st.plotly_chart(fig)
 
