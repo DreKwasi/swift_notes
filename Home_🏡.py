@@ -71,7 +71,7 @@ st.subheader(
 for index, row in sorted_df.iterrows():
     st.markdown(
         f"""
-                [{row["title"]}](row["link"])
+                [{row["title"]}]({row["link"]})
                 by {row["publisher"]}
                 """
     )
