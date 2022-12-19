@@ -1,4 +1,4 @@
-from helper import full_setup
+from func.helper import full_setup
 
 full_setup(
     page_header="Excel 📋", filename="excel", table_name="Excel"

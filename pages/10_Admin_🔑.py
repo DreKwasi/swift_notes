@@ -1,5 +1,5 @@
 import streamlit as st
-from google_sheet import connect_main, update_data, pull_data
+from func.google_sheet import connect_main, update_data, pull_data
 import streamlit_authenticator as stauth
 
 st.set_page_config(
