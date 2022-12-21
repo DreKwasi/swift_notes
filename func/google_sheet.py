@@ -56,10 +56,11 @@ def pull_data(spread, sheetname, filename):
     return df
 
 # function for loading all data from db
-def load_all(filenames):
+def load_all(filenames=filenames):
     for key in filenames:
-        with st.spinner("Reloading Resources..."):
+        with st.spinner(f"Reloading Resources for {key}..."):
             pull_data(connect_main(), key, filenames[key])
+            
 
 
 def next_available_row(worksheet):

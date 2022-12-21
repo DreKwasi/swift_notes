@@ -1,8 +1,6 @@
 import streamlit as st
 from func.google_sheet import connect_main, pull_data, load_all
 import streamlit_authenticator as stauth
-import os
-import altair as alt
 from func.analysis import get_data, groupby
 import plotly_express as px
 
@@ -16,14 +14,18 @@ df = get_data()
 # Main Header
 st.header("Dashboard 🏡")
 
+
+
+
 # Refresh button
-refresh = st.button("Refresh Dashboard", type="secondary", on_click=load_all)
+st.button("Refresh Dashboard", type="secondary", on_click=load_all)
+    
 
 
 # Subheader for Summary Stats
 st.subheader("Summary Stats for Overall Uploads")
 
-# Columns for spliting headers or metrics
+# Columns for splitting headers or metrics
 col1, col2, col3 = st.columns(3)
 
 # Column 1 Metric for

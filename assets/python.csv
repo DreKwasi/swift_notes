@@ -8,3 +8,9 @@ A/B Testing for Data Science using Python – A Must-Read Guide for Data Scienti
 This seems to be a classic Catch-22 situation!
 
 This is where a data scientist can take control. A data scientist collects and studies the data available to help optimize the website for a better consumer experience. And for this, it is imperative to know how to use various statistical tools, especially the concept of A/B Testing.",Analytics Vidhya,https://www.analyticsvidhya.com/blog/2020/10/ab-testing-data-science/,2022-12-18,Articles,Python
+Learn Object Oriented Programming,"The main benefit of writing your code in an object-oriented way is to structure your program into simple, reusable pieces of code.
+
+Stick with me through this article and you'll have a full understanding of the core tenets of OOP by the end. All the coding examples will be in Python, but the concepts apply generally to all coding languages.",freeCodeCamp,https://www.freecodecamp.org/news/crash-course-object-oriented-programming-in-python/,2022-12-19,Articles,Python
+How to scrape websites with Python and BeautifulSoup,"There is more information on the Internet than any human can absorb in a lifetime. What you need is not access to that information, but a scalable way to collect, organize, and analyze it.
+
+You need web scraping.",freeCodeCamp,freecodecamp.org/news/how-to-scrape-websites-with-python-and-beautifulsoup-5946935d93fe/,2022-12-20,Articles,Python
