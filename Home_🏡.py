@@ -14,13 +14,8 @@ df = get_data()
 # Main Header
 st.header("Dashboard 🏡")
 
-
-
-
 # Refresh button
 st.button("Refresh Dashboard", type="secondary", on_click=load_all)
-    
-
 
 # Subheader for Summary Stats
 st.subheader("Summary Stats for Overall Uploads")
@@ -51,7 +46,7 @@ sel_category = st.sidebar.selectbox(
 
 sorted_df = df.loc[
     :, ["title", "link", "publisher", "date_created", "note_type", "category"]
-].sort_values(by="date_created", ascending=True)
+].sort_values(by="date_created", ascending=False)
 
 sorted_df = (
     sorted_df[sorted_df["note_type"] == sel_resource]
