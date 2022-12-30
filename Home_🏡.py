@@ -102,6 +102,7 @@ fig = px.bar(
     x="Upload Date",
     y="Number of Uploads",
     color="category",
+    barmode='group',
     category_orders=gdf["Upload Date"],
 )
 
