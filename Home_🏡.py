@@ -97,7 +97,6 @@ gdf.rename(
     inplace=True,
 )
 gdf.sort_values(by="Upload Date", ascending=True)
-st.dataframe(gdf['Upload Date'])
 fig = px.bar(
     gdf,
     x="Upload Date",
