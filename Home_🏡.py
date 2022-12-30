@@ -9,7 +9,7 @@ st.set_page_config(page_title="Swift Notes", page_icon="📚", layout="wide")
 
 # Merging all csv files into a single file
 df = get_data()
-
+df.sort_values(by="date_created", ascending=True, inplace=True)
 
 # Main Header
 st.header("Dashboard 🏡")
@@ -91,12 +91,20 @@ st.markdown("###")
 
 st.subheader("Trend View")
 
-gdf = groupby(df, sel_resource, sel_category)
+gdf = groupby(df.copy(), sel_resource, sel_category)
 gdf.rename(
     columns={"date_created": "Upload Date", "count_note_type": "Number of Uploads"},
     inplace=True,
 )
-fig = px.bar(gdf, x="Upload Date", y="Number of Uploads", color="category")
+gdf.sort_values(by="Upload Date", ascending=True)
+st.dataframe(gdf['Upload Date'])
+fig = px.bar(
+    gdf,
+    x="Upload Date",
+    y="Number of Uploads",
+    color="category",
+    category_orders=gdf["Upload Date"],
+)
 
 with fig.batch_update():
     fig.update_layout(coloraxis_showscale=False)

@@ -6,3 +6,17 @@ It’s Time to Retire ‘Crap Circles’,"Every time I encounter a crap circle m
 How to Start Thinking Like a Data Scientist,"Slowly but steadily, data are forcing their way into every nook and cranny of every industry, company, and job. Managers who aren’t data savvy, who can’t conduct basic analyses, interpret more complex ones, and interact with data scientists are already at a disadvantage. Companies without a large and growing cadre of data-savvy managers are similarly disadvantaged.",Harvard Business Review,https://hbr.org/2013/11/how-to-start-thinking-like-a-data-scientist,2022-12-18,Articles,Data Analysis
 Day in the Life of a Data Analyst: Stakeholder ➡️ Co-Worker ➡️ SQL ➡️ Python ➡️ Visualizations,"Watch me reenact a REAL day in the life of a Data Analyst. From interviewing the Stakeholder for requirements to asking a coworker for the location of a table, to creating a SQL query, and analyzing the data in Python, you'll get to really FEEL like a Data Analyst.", Shashank Kalanithi (YouTube),https://www.youtube.com/watch?v=4VkAwPYgSgk,2022-12-19,Free Courses,Data Analysis
 Why Your Team Needs a Weekly Metrics Review,"The article argues that it is important for all members of an organization to be familiar with metrics, rather than just relying on a select group of ""data people."" It suggests that the only way to achieve this is through frequent exposure to data and suggests that dashboards can be an effective tool for this purpose. However, the author notes that unless an individual's job title includes the word ""data,"" they may not prioritize checking dashboards regularly, leading to a cycle of dashboards going unused and becoming unmaintained. The article suggests that finding ways to increase engagement with dashboards can help to break this cycle and improve the effectiveness of using data to inform decision-making within the organization.",Medium,https://joulee.medium.com/why-your-team-needs-a-weekly-metrics-review-dcc9cce7ac3c,2022-12-21,Articles,Data Analysis
+"The Blind Men, the Elephant, and the 3 Data Mistakes","A famous Indian parable describes five blind men encountering an elephant for the first time. They each decide to touch the elephant to understand what the animal is like.
+
+“An elephant is smooth and hard, like bone,” says the man who grasped its tusk
+
+“Nonsense, an elephant is soft like leather,” says the man who felt its ear.
+
+“You’re both wrong; an elephant is rough like a tree,” says the man who touched its leg.
+
+The five men begin arguing vehemently, each convinced that he is right. None of them manages to convince the other of anything, except that everyone else is untrustworthy.",Medium,https://joulee.medium.com/the-blind-men-the-elephant-and-the-3-data-mistakes-79aaf648c122,2022-12-22,Articles,Data Analysis
+Different Types of Time Series Decomposition,"Abraham Maslow writes, “I suppose it is tempting, if the only tool you have is a hammer, to treat everything as if it were a nail”.
+
+This is the situation that aspiring data scientists find themselves in when analyzing time series data. The seasonal_decompose function from Python’s Statsmodels library is the hammer, and every time series data is just another nail.
+
+Decomposing our time series is an important step in improving forecast accuracy and creating causal insights.",Medium,https://towardsdatascience.com/different-types-of-time-series-decomposition-396c09f92693,2022-12-23,Articles,Data Analysis
